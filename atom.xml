@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-03-15T05:10:39.000Z</updated>
+  <updated>2016-03-15T05:55:55.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,9 +20,9 @@
     <link href="http://yoursite.com/2016/03/15/%E6%96%BD%E9%91%AB%E5%85%B4%E6%98%AF%E5%A4%A7%E5%82%BB%E9%80%BC/"/>
     <id>http://yoursite.com/2016/03/15/施鑫兴是大傻逼/</id>
     <published>2016-03-15T03:20:34.000Z</published>
-    <updated>2016-03-15T05:10:39.000Z</updated>
+    <updated>2016-03-15T05:55:55.000Z</updated>
     
-    <content type="html">&lt;h2 id=&quot;使用代码实现Autolayout的方法1&quot;&gt;&lt;a href=&quot;#使用代码实现Autolayout的方法1&quot; class=&quot;headerlink&quot; title=&quot;使用代码实现Autolayout的方法1&quot;&gt;&lt;/a&gt;使用代码实现Autolayout的方法1&lt;/h2&gt;&lt;ul&gt;
+    <content type="html">&lt;h1 id=&quot;第一篇-iOS&quot;&gt;&lt;a href=&quot;#第一篇-iOS&quot; class=&quot;headerlink&quot; title=&quot;第一篇 iOS&quot;&gt;&lt;/a&gt;第一篇 iOS&lt;/h1&gt;&lt;h2 id=&quot;使用代码实现Autolayout的方法1&quot;&gt;&lt;a href=&quot;#使用代码实现Autolayout的方法1&quot; class=&quot;headerlink&quot; title=&quot;使用代码实现Autolayout的方法1&quot;&gt;&lt;/a&gt;使用代码实现Autolayout的方法1&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;创建约束&lt;/li&gt;
 &lt;/ul&gt;
 &lt;figure class=&quot;highlight objc&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;+(&lt;span class=&quot;keyword&quot;&gt;id&lt;/span&gt;)constraintWithItem:(&lt;span class=&quot;keyword&quot;&gt;id&lt;/span&gt;)view1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;attribute:(&lt;span class=&quot;built_in&quot;&gt;NSLayoutAttribute&lt;/span&gt;)attr1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;relatedBy:(&lt;span class=&quot;built_in&quot;&gt;NSLayoutRelation&lt;/span&gt;)relation&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;toItem:(&lt;span class=&quot;keyword&quot;&gt;id&lt;/span&gt;)view2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;attribute:(&lt;span class=&quot;built_in&quot;&gt;NSLayoutAttribute&lt;/span&gt;)attr2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;multiplier:(&lt;span class=&quot;built_in&quot;&gt;CGFloat&lt;/span&gt;)multiplier&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;constant:(&lt;span class=&quot;built_in&quot;&gt;CGFloat&lt;/span&gt;)c;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;* view1 ：要约束的控件&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;* attr1 ：约束的类型（做怎样的约束）&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;* relation ：与参照控件之间的关系&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;* view2 ：参照的控件&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;* attr2 ：约束的类型（做怎样的约束）&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;* multiplier ：乘数&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;* c ：常量&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -75,7 +75,7 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;使用代码实现Autolayout的方法1&quot;&gt;&lt;a href=&quot;#使用代码实现Autolayout的方法1&quot; class=&quot;headerlink&quot; title=&quot;使用代码实现Autolayout的方法1&quot;&gt;&lt;/a&gt;使用代码实现Autolayout的方法1&lt;/h2&gt;&lt;
+      &lt;h1 id=&quot;第一篇-iOS&quot;&gt;&lt;a href=&quot;#第一篇-iOS&quot; class=&quot;headerlink&quot; title=&quot;第一篇 iOS&quot;&gt;&lt;/a&gt;第一篇 iOS&lt;/h1&gt;&lt;h2 id=&quot;使用代码实现Autolayout的方法1&quot;&gt;&lt;a href=&quot;#使用代码实现Autolay
     
     </summary>
     
