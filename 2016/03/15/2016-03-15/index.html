@@ -59,25 +59,19 @@
 
 
 
-<meta name="description" content="使用代码实现Autolayout的方法1
-创建约束
-
-1234567891011121314+(id)constraintWithItem:(id)view1attribute:(NSLayoutAttribute)attr1relatedBy:(NSLayoutRelation)relationtoItem:(id)view2attribute:(NSLayoutAttribute)attr2m">
+<meta name="description" content="title:写在前面的话欢迎来到我的博客，这是一片新的天地。
+2016-03-15以后我会在这里发布自己的学习笔记和日记。^-^">
 <meta property="og:type" content="article">
-<meta property="og:title" content="第一篇 iOS">
-<meta property="og:url" content="http://yoursite.com/2016/03/15/iOS-01/index.html">
+<meta property="og:title" content="GloomyBearM">
+<meta property="og:url" content="http://yoursite.com/2016/03/15/2016-03-15/index.html">
 <meta property="og:site_name" content="GloomyBearM">
-<meta property="og:description" content="使用代码实现Autolayout的方法1
-创建约束
-
-1234567891011121314+(id)constraintWithItem:(id)view1attribute:(NSLayoutAttribute)attr1relatedBy:(NSLayoutRelation)relationtoItem:(id)view2attribute:(NSLayoutAttribute)attr2m">
-<meta property="og:updated_time" content="2016-03-15T10:06:31.000Z">
+<meta property="og:description" content="title:写在前面的话欢迎来到我的博客，这是一片新的天地。
+2016-03-15以后我会在这里发布自己的学习笔记和日记。^-^">
+<meta property="og:updated_time" content="2016-03-15T10:12:47.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="第一篇 iOS">
-<meta name="twitter:description" content="使用代码实现Autolayout的方法1
-创建约束
-
-1234567891011121314+(id)constraintWithItem:(id)view1attribute:(NSLayoutAttribute)attr1relatedBy:(NSLayoutRelation)relationtoItem:(id)view2attribute:(NSLayoutAttribute)attr2m">
+<meta name="twitter:title" content="GloomyBearM">
+<meta name="twitter:description" content="title:写在前面的话欢迎来到我的博客，这是一片新的天地。
+2016-03-15以后我会在这里发布自己的学习笔记和日记。^-^">
 
 
 
@@ -95,7 +89,7 @@
   };
 </script>
 
-  <title> 第一篇 iOS | GloomyBearM </title>
+  <title>  | GloomyBearM </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -228,7 +222,7 @@
             
             
               
-                第一篇 iOS
+                
               
             
           </h1>
@@ -240,7 +234,7 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-15T11:20:34+08:00" content="2016-03-15">
+            <time itemprop="dateCreated" datetime="2016-03-15T18:12:47+08:00" content="2016-03-15">
               2016-03-15
             </time>
           </span>
@@ -251,8 +245,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/03/15/iOS-01/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/15/iOS-01/" itemprop="commentsCount"></span>
+                <a href="/2016/03/15/2016-03-15/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/15/2016-03-15/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -274,55 +268,9 @@
       
 
       
-        <h3 id="使用代码实现Autolayout的方法1"><a href="#使用代码实现Autolayout的方法1" class="headerlink" title="使用代码实现Autolayout的方法1"></a>使用代码实现Autolayout的方法1</h3><ul>
-<li>创建约束</li>
-</ul>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">+(<span class="keyword">id</span>)constraintWithItem:(<span class="keyword">id</span>)view1</span><br><span class="line">attribute:(<span class="built_in">NSLayoutAttribute</span>)attr1</span><br><span class="line">relatedBy:(<span class="built_in">NSLayoutRelation</span>)relation</span><br><span class="line">toItem:(<span class="keyword">id</span>)view2</span><br><span class="line">attribute:(<span class="built_in">NSLayoutAttribute</span>)attr2</span><br><span class="line">multiplier:(<span class="built_in">CGFloat</span>)multiplier</span><br><span class="line">constant:(<span class="built_in">CGFloat</span>)c;</span><br><span class="line">* view1 ：要约束的控件</span><br><span class="line">* attr1 ：约束的类型（做怎样的约束）</span><br><span class="line">* relation ：与参照控件之间的关系</span><br><span class="line">* view2 ：参照的控件</span><br><span class="line">* attr2 ：约束的类型（做怎样的约束）</span><br><span class="line">* multiplier ：乘数</span><br><span class="line">* c ：常量</span><br></pre></td></tr></table></figure>
-<ul>
-<li>添加约束</li>
-</ul>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="keyword">void</span>)addConstraint:(<span class="built_in">NSLayoutConstraint</span> *)constraint;</span><br><span class="line">- (<span class="keyword">void</span>)addConstraints:(<span class="built_in">NSArray</span> *)constraints;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>注意<ul>
-<li>一定要在拥有父控件之后再添加约束</li>
-<li>关闭Autoresizing功能<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">view.translatesAutoresizingMaskIntoConstraints = <span class="literal">NO</span>;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="使用代码实现Autolayout的方法2-VFL"><a href="#使用代码实现Autolayout的方法2-VFL" class="headerlink" title="使用代码实现Autolayout的方法2 - VFL"></a>使用代码实现Autolayout的方法2 - VFL</h3><ul>
-<li>使用VFL创建约束数组</li>
-</ul>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">+ (<span class="built_in">NSArray</span> *)constraintsWithVisualFormat:(<span class="built_in">NSString</span> *)format</span><br><span class="line">options:(<span class="built_in">NSLayoutFormatOptions</span>)opts</span><br><span class="line">metrics:(<span class="built_in">NSDictionary</span> *)metrics</span><br><span class="line">views:(<span class="built_in">NSDictionary</span> *)views;</span><br><span class="line">* format ：VFL语句</span><br><span class="line">* opts ：约束类型</span><br><span class="line">* metrics ：VFL语句中用到的具体数值</span><br><span class="line">* views ：VFL语句中用到的控件</span><br></pre></td></tr></table></figure>
-<ul>
-<li>使用下面的宏来自动生成views和metrics参数</li>
-</ul>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">NSDictionaryOfVariableBindings</span>(...)</span><br></pre></td></tr></table></figure>
-<h3 id="使用代码实现Autolayout的方法3-Masonry"><a href="#使用代码实现Autolayout的方法3-Masonry" class="headerlink" title="使用代码实现Autolayout的方法3 - Masonry"></a>使用代码实现Autolayout的方法3 - Masonry</h3><ul>
-<li><p>使用步骤</p>
-<ul>
-<li>添加Masonry文件夹的所有源代码到项目中</li>
-<li>添加2个宏、导入主头文件<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">    <span class="comment">// 只要添加了这个宏，就不用带mas_前缀</span></span><br><span class="line">    <span class="meta">#define MAS_SHORTHAND</span></span><br><span class="line"><span class="comment">// 只要添加了这个宏，equalTo就等价于mas_equalTo</span></span><br><span class="line"><span class="meta">#define MAS_SHORTHAND_GLOBALS</span></span><br><span class="line"><span class="comment">// 这个头文件一定要放在上面两个宏的后面</span></span><br><span class="line"><span class="meta">#import <span class="meta-string">"Masonry.h"</span></span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-<li><p>添加约束的方法</p>
-</li>
-</ul>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 这个方法只会添加新的约束</span></span><br><span class="line"> [view makeConstraints:^(MASConstraintMaker *make) &#123;</span><br><span class="line"></span><br><span class="line"> &#125;];</span><br><span class="line"></span><br><span class="line"><span class="comment">// 这个方法会将以前的所有约束删掉，添加新的约束</span></span><br><span class="line"> [view remakeConstraints:^(MASConstraintMaker *make) &#123;</span><br><span class="line"></span><br><span class="line"> &#125;];</span><br><span class="line"></span><br><span class="line"> <span class="comment">// 这个方法将会覆盖以前的某些特定的约束</span></span><br><span class="line"> [view updateConstraints:^(MASConstraintMaker *make) &#123;</span><br><span class="line"></span><br><span class="line"> &#125;];</span><br></pre></td></tr></table></figure>
-<ul>
-<li><p>约束的类型</p>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span>尺寸：width\height\size</span><br><span class="line"><span class="number">2.</span>边界：left\leading\right\trailing\top\bottom</span><br><span class="line"><span class="number">3.</span>中心点：center\centerX\centerY</span><br><span class="line"><span class="number">4.</span>边界：edges</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>tableView如何显示数据</p>
-<ul>
-<li>设置dataSource数据源</li>
-<li>数据源要遵守UITableViewDataSource协议</li>
-<li>数据源要实现协议中的某些方法</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span><br><span class="line"> *  告诉tableView一共有多少组数据</span><br><span class="line"> */</span></span><br><span class="line">- (<span class="built_in">NSInteger</span>)numberOfSectionsInTableView:(<span class="built_in">UITableView</span> *)tableView</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span><br><span class="line"> *  告诉tableView第section组有多少行</span><br><span class="line"> */</span></span><br><span class="line">- (<span class="built_in">NSInteger</span>)tableView:(<span class="built_in">UITableView</span> *)tableView numberOfRowsInSection:(<span class="built_in">NSInteger</span>)section</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span><br><span class="line"> *  告诉tableView第indexPath行显示怎样的cell</span><br><span class="line"> */</span></span><br><span class="line">- (<span class="built_in">UITableViewCell</span> *)tableView:(<span class="built_in">UITableView</span> *)tableView cellForRowAtIndexPath:(<span class="built_in">NSIndexPath</span> *)indexPath</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span><br><span class="line"> *  告诉tableView第section组的头部标题</span><br><span class="line"> */</span></span><br><span class="line">- (<span class="built_in">NSString</span> *)tableView:(<span class="built_in">UITableView</span> *)tableView titleForHeaderInSection:(<span class="built_in">NSInteger</span>)section</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span><br><span class="line"> *  告诉tableView第section组的尾部标题</span><br><span class="line"> */</span></span><br><span class="line">- (<span class="built_in">NSString</span> *)tableView:(<span class="built_in">UITableView</span> *)tableView titleForFooterInSection:(<span class="built_in">NSInteger</span>)section</span><br></pre></td></tr></table></figure>
+        <hr>
+<h2 id="title-写在前面的话"><a href="#title-写在前面的话" class="headerlink" title="title:写在前面的话"></a>title:写在前面的话</h2><p>欢迎来到我的博客，这是一片新的天地。</p>
+<h2 id="2016-03-15"><a href="#2016-03-15" class="headerlink" title="2016-03-15"></a>2016-03-15</h2><p>以后我会在这里发布自己的学习笔记和日记。^-^</p>
 
       
     </div>
@@ -340,17 +288,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/03/15/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2016/03/15/iOS-01/" rel="next" title="第一篇 iOS">
+                <i class="fa fa-chevron-left"></i> 第一篇 iOS
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/03/15/2016-03-15/" rel="prev" title="">
-                 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -372,15 +316,12 @@
           </div>
           
 
-  <p>热评文章</p>
-  <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
-
 
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/03/15/iOS-01/"
-           data-title="第一篇 iOS" data-url="http://yoursite.com/2016/03/15/iOS-01/">
+      <div class="ds-thread" data-thread-key="2016/03/15/2016-03-15/"
+           data-title="" data-url="http://yoursite.com/2016/03/15/2016-03-15/">
       </div>
     
   </div>
@@ -469,7 +410,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用代码实现Autolayout的方法1"><span class="nav-number">1.</span> <span class="nav-text">使用代码实现Autolayout的方法1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用代码实现Autolayout的方法2-VFL"><span class="nav-number">2.</span> <span class="nav-text">使用代码实现Autolayout的方法2 - VFL</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用代码实现Autolayout的方法3-Masonry"><span class="nav-number">3.</span> <span class="nav-text">使用代码实现Autolayout的方法3 - Masonry</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#title-写在前面的话"><span class="nav-number">1.</span> <span class="nav-text">title:写在前面的话</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2016-03-15"><span class="nav-number">2.</span> <span class="nav-text">2016-03-15</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
