@@ -2,30 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2016/03/15/2016-03-15/</loc>
+    <loc>http://yoursite.com/2016/03/15/%E7%94%A8%E4%BB%A3%E7%A0%81%E5%88%9B%E5%BB%BA%20Autolayout/</loc>
+    
+    <lastmod>2016-03-15T14:49:01.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/about/index.html</loc>
+    
+    <lastmod>2016-03-15T14:46:27.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/03/15/%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2%E7%9A%84%E8%AF%9D/</loc>
     
     <lastmod>2016-03-15T10:15:42.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2016/03/15/hello-world/</loc>
+    <loc>http://yoursite.com/404.html</loc>
     
-    <lastmod>2016-03-15T10:08:01.000Z</lastmod>
+    <lastmod>2015-09-17T18:44:14.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2016/03/15/iOS-01/</loc>
+    <loc>http://yoursite.com/Talk%20to%20My%20mind's%20eye.html</loc>
     
-    <lastmod>2016-03-15T10:06:31.000Z</lastmod>
+    <lastmod>2015-09-17T18:44:14.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/categories/index.html</loc>
     
-    <lastmod>2016-03-15T06:21:25.000Z</lastmod>
+    <lastmod>2015-09-17T18:44:14.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/tags/index.html</loc>
+    
+    <lastmod>2015-09-17T18:44:14.000Z</lastmod>
     
   </url>
   
